@@ -1,30 +1,29 @@
 from dataclasses import dataclass
-from typing import Optional
 
 class Config:
-    Username: Optional[str] = None
-    User_id: Optional[str] = None
-    Search: Optional[str] = None
+    Username = None
+    User_id = None
+    Search = None
     Lookup: bool = False
     Geo: str = ""
     Location: bool = False
     Near: str = None
-    Lang: Optional[str] = None
-    Output: Optional[str] = None
+    Lang = None
+    Output = None
     Elasticsearch: object = None
-    Year: Optional[int] = None
-    Since: Optional[str] = None
-    Until: Optional[str] = None
-    Email: Optional[str] = None
-    Phone: Optional[str] = None
+    Year = None
+    Since = None
+    Until = None
+    Email = None
+    Phone = None
     Verified: bool = False
     Store_csv: bool = False
     Store_json: bool = False
     Custom = {"tweet": None, "user": None, "username": None}
     Show_hashtags: bool = False
     Show_cashtags: bool = False
-    Limit: Optional[int] = None
-    Count: Optional[int] = None
+    Limit = None
+    Count = None
     Stats: bool = False
     Database: object = None
     To: str = None
@@ -72,9 +71,9 @@ class Config:
     Min_likes: int = 0
     Min_retweets: int = 0
     Min_replies: int = 0
-    Links: Optional[str] = None
-    Source: Optional[str] = None
-    Members_list: Optional[str] = None
+    Links = None
+    Source = None
+    Members_list = None
     Filter_retweets: bool = False
     Translate: bool = False
     TranslateSrc: str = "en"
